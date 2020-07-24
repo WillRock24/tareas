@@ -74,7 +74,28 @@ code {
   line-height: 1;
   width: 100%;
 }
-.btndesactivado {
+.button {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #464545;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: none;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0 0.5rem 0;
+  vertical-align: middle;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+  width: 100%;
+}
+
+.buttonactivado {
   -webkit-appearance: none;
   display: inline-block;
   border-radius: 4px;

@@ -13,21 +13,15 @@ export const CrearTarea = props => {
        }
   
     return (
-        <div>
-            <table>
-                <tr>
+             <tr>
                     <td>
-                        <input
-                            type="text"
-                            placeholder="Ingresa una Nueva Tarea"
+                        <input type="text" placeholder="Ingresa una Nueva Tarea"
                             required
                             value={NuevoNombreTarea}
-                            onChange={actualizarTarea}
-                        /></td><td>
+                            onChange={actualizarTarea}/></td>
+                            <td>
                         <button className="botonform" onClick={creaNuevaTarea}>+</button>
                     </td>
                 </tr>
-            </table>
-        </div>
-    );
+         );
 };

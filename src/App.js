@@ -11,7 +11,7 @@ function App() {
     { nombre: "Tarea Tres", completado: true, importante: false },
     { nombre: "Tarea Cuatro", completado: false, importante: true }
   ]);
-  //const [showCompleted, setshowCompleted] = useState(true);
+  //crear nueva tarea
   const crearNuevaTarea = tareaNombre => {
     if (!datosTareas.find(t => t.nombre === tareaNombre)) {
       setdatosTareas([...datosTareas, { nombre: tareaNombre, completado: false }])
@@ -37,18 +37,18 @@ function App() {
       ));
 
   return (
-    <div>
-      <CrearTarea crearNuevaTarea={crearNuevaTarea} />
+    <div className="FormContainer">
+   
       <table>
-        <thead>
+      <thead>
+        <CrearTarea crearNuevaTarea={crearNuevaTarea}/>
+        </thead>
+        <tbody>
           <tr>
             <th>Tareas</th>
             <th>Importante</th>
           </tr>
-        </thead>
-        <tbody>
           {tareaTablaFilas(false)}
-          <label>Tareas Completadas</label>
           {tareaTablaFilas(true)}
         </tbody>
       </table>
