@@ -6,8 +6,8 @@ import { CrearTarea } from './componentes/CrearTarea.js';
 function App() {
 
   const [datosTareas, setdatosTareas] = useState([
-    { nombre: "Tarea uno", completado: false, importante: true },
-    { nombre: "Tarea dos", completado: false, importante: true },
+    { nombre: "Tarea Uno", completado: false, importante: true },
+    { nombre: "Tarea Dos", completado: false, importante: true },
     { nombre: "Tarea Tres", completado: true, importante: false },
     { nombre: "Tarea Cuatro", completado: false, importante: true }
   ]);

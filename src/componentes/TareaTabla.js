@@ -4,7 +4,7 @@ import React from "react";
 export const TareaTabla = props => (
 
     <tr key={props.tarea.nombre}>
-        <td> <button className={props.tarea.completado ? 'buttondesactivado' : 'button'} onClick={() => props.cambioEstadoTarea(props.tarea)} > {props.tarea.nombre}</button>
+        <td> <button className={props.tarea.completado ? 'buttondesactivado' : 'buttonactivado'} onClick={() => props.cambioEstadoTarea(props.tarea)} > {props.tarea.nombre}</button>
         </td>
         <td>
             <input
