@@ -39,7 +39,6 @@ function App() {
 
   return (
     <div className="FormContainer">
-   
       <table>
       <thead>
         <CrearTarea crearNuevaTarea={crearNuevaTarea}/>

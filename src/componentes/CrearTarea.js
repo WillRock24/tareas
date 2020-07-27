@@ -20,7 +20,7 @@ export const CrearTarea = props => {
                             value={NuevoNombreTarea}
                             onChange={actualizarTarea}/></td>
                             <td>
-                        <button className="botonform" onClick={creaNuevaTarea}>+</button>
+                        <button className="botonform" onClick={creaNuevaTarea}></button>
                     </td>
                 </tr>
          );
