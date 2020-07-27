@@ -3,18 +3,19 @@ import './App.css';
 import { TareaTabla } from './componentes/TareaTabla.js';
 import { CrearTarea } from './componentes/CrearTarea.js';
 
+
 function App() {
 
   const [datosTareas, setdatosTareas] = useState([
-    { nombre: "Tarea Uno", completado: false, importante: true },
-    { nombre: "Tarea Dos", completado: false, importante: true },
-    { nombre: "Tarea Tres", completado: true, importante: false },
+    { nombre: "Tarea Uno", completado: false, importante: false },
+    { nombre: "Tarea Dos", completado: false, importante: false },
+    { nombre: "Tarea Tres", completado: true, importante: true },
     { nombre: "Tarea Cuatro", completado: false, importante: true }
   ]);
   //crear nueva tarea
   const crearNuevaTarea = tareaNombre => {
     if (!datosTareas.find(t => t.nombre === tareaNombre)) {
-      setdatosTareas([...datosTareas, { nombre: tareaNombre, completado: false }])
+      setdatosTareas([...datosTareas, { nombre: tareaNombre, completado: false, importante:false }])
     }
   }
   //cambiar estado a Completado

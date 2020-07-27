@@ -1,18 +1,18 @@
-
 import React from "react";
 
 export const TareaTabla = props => (
 
     <tr key={props.tarea.nombre}>
-        <td> <button className={props.tarea.completado ? 'buttondesactivado' : 'buttonactivado'} onClick={() => props.cambioEstadoTarea(props.tarea)} > {props.tarea.nombre}</button>
+        <td> 
+            <button 
+            className={props.tarea.completado ? 'buttondesactivado' : 'buttonactivado'}
+            onClick={() => props.cambioEstadoTarea(props.tarea)} > {props.tarea.nombre}</button>
         </td>
         <td>
-            <input
-                type="checkbox"
-                className="checkboxtrue"
-                checked={props.tarea.importante}
-                onChange={() => props.cambiarEstado(props.tarea)}
-            />
+            <button
+                className={props.tarea.importante ?'botonverde':'botongris'}
+                onClick={() => props.cambiarEstado(props.tarea)}
+         ></button>
         </td>
     </tr>
 );
