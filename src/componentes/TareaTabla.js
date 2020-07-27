@@ -11,7 +11,7 @@ export const TareaTabla = props => (
         <td>
             <button
                 className={props.tarea.importante ?'botonverde':'botongris'}
-                onClick={() => props.cambiarEstado(props.tarea)}
+                onClick={() => props.tarea.completado?'':props.cambiarEstado(props.tarea)}
          ></button>
         </td>
     </tr>
