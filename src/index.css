@@ -13,6 +13,7 @@ body {
   width:35px;
   background-position:center;
   border: 0px ;
+  outline:none;
 }
 .botongris:hover{
   background-image:url(./img/sverde.svg);
@@ -21,6 +22,7 @@ body {
   width:35px;
   background-position:center;
   border: 0px ;
+  outline:none;
 }
 
 .botonverde{
@@ -30,6 +32,7 @@ body {
   width:35px;
   background-position:center;
   border: 0px ;
+  outline:none;
 }
 
 
@@ -107,14 +110,21 @@ td {
   background: #ffffff;
   border: 1px solid #eeeeee;
   color: #000000;
-  text-align: left;
   max-width:2.5rem;
-  padding: 1rem 1rem;
+  max-height:2.5rem;
+  width: 300px;
+  height: 300px;
   font-size: 1rem;
   margin: 0 0 0 rem 0;
+  outline:none;
 
 }
-
+.botonform:hover {
+  background: #070707bb;
+  color: #fff !important;
+  border: none;
+  outline:none;
+}
 .buttonactivado {
   -webkit-appearance: none;
   display: inline-block;
@@ -132,6 +142,7 @@ td {
   text-decoration: none;
   line-height: 1;
   width: 100%;
+  outline:none;
 }
 
 .buttondesactivado {
@@ -151,6 +162,8 @@ td {
   text-decoration: none;
   line-height: 1;
   width: 100%;
+  outline:none;
+
 }
 
 
