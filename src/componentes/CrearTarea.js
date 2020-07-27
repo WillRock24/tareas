@@ -7,11 +7,10 @@ export const CrearTarea = props => {
     const actualizarTarea = e => setNuevoNombreTarea(e.target.value);
 
     const creaNuevaTarea = () => {
-        props.crearNuevaTarea(NuevoNombreTarea);
-    
-        setNuevoNombreTarea('');
+        if(NuevoNombreTarea!==""){
+        props.crearNuevaTarea(NuevoNombreTarea);}
+        else{console.log("vacio");}
        }
-  
     return (
              <tr>
                     <td>
